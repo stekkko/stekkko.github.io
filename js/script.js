@@ -1,7 +1,7 @@
 let randArray = [];
 
 for (let i = 0; i < 1000; i++){
-    randArray.push(Math.floor(Math.random() * 100));
+    randArray.push(Math.random());
 }
 
 function printArray(array=randArray){
