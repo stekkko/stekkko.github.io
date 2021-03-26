@@ -53,7 +53,7 @@ footer {
     margin-top: 15px;
 }
 
-nav, aside, .facts, .skills, .examples {
+nav, aside, .facts, .skills, .examples, .avatar {
     margin-top: 3%;
     padding: 20px 20px 20px 20px;
 }
@@ -113,11 +113,15 @@ h4 {
     clear: both;
 }
 
+.avatar {
+	padding: 10px 10px 10px 10px;
+}
+
 .mainPart {
     width: 70%;
 }
 
-.asideText {
+.asideBar {
     top: 20px;
     position: -webkit-sticky;
     position: sticky;
