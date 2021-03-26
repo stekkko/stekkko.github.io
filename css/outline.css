@@ -30,7 +30,7 @@ html::after {
     z-index: -1;
 }
 
-nav, aside, .facts, .skills, .examples {
+nav, aside, .facts, .skills, .examples, .chat {
     background-color: var(--fg_color_yellow);
     border: 3px solid var(--border_color);
 }
@@ -53,7 +53,7 @@ footer {
     margin-top: 15px;
 }
 
-nav, aside, .facts, .skills, .examples, .avatar {
+nav, aside, .facts, .skills, .examples, .avatar, .chat {
     margin-top: 3%;
     padding: 20px 20px 20px 20px;
 }
@@ -134,6 +134,16 @@ h4 {
     margin-top: 20px;
     margin-left: 10px;
     padding: 20px 20px 20px 20px;
+}
+
+#chatBox, #closeChat {
+	display: none;
+}
+
+.chatCross {
+    width: 15px;
+    height: 15px;
+    margin-left: 5%;
 }
 
 #wind {

@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <script src="js/script.js">
-    </script>
+    <script src="js/lab5.js"></script>
+	<script src="js/lab7.js"></script>
 
     <header>
         <h1>Личная страница</h1>
@@ -100,7 +100,21 @@
                 <q><em>Дайте</em> человеку рыбу, и завтра он опять <strong>будет голоден</strong>. <em>Научите</em> его ловить рыбу, и он будет <strong>жить в достатке</strong> до конца жизни.</q><br />
                 <cite>Марта Джей Лоун "Общий рост"</cite>
             </div>
+			<div class="chat">
+				<button id="openChat" class="chatButton" onclick="openChat()">Открыть чат</button>
+				<button id="closeChat" class="chatButton" onclick="closeChat()">Закрыть чат</button>
+				<div id="chatBox">
+					<div id="chatMessages">
+
+					</div>
+					<label>
+						<input id="userText" type="text" value="Введите сообщение" onfocus="if (this.value=='Введите сообщение') this.value='';"/>
+					</label>
+					<input type="submit" value="Отправить" class="chatButton" onclick="sendMessage()">
+				</div>	
+			</div>
         </div>
+		
         <aside>
             <div class="asideBar">
 				<h4>Ну что? Не узнали?</h4>
@@ -112,7 +126,7 @@
                 <h4>Важные дела</h4>
                 <dl>
                     <li><b>Сдать долг по вебу<i>(!)</i></b></li>
-		    <li><s>Сварить пельмешки</s></li>
+                    <li>Сварить пельмешки</li>
                     <li>Пора подкачаться</li>
                     <li>Сдать лабы по мл</li>
                 </dl>
